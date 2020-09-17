@@ -1,1 +1,4 @@
-<h1>video-list works!</h1>
+<div *ngFor="let video of videoList">
+  <app-video-list-item [video]=video>
+  </app-video-list-item>
+</div>

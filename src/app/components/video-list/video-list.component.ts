@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Video } from 'src/app/models/video.model';
+import { VideosService } from 'src/app/services/videos.service';
 
 @Component({
   selector: 'app-video-list',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-list.component.scss']
 })
 export class VideoListComponent implements OnInit {
+  videoList: Array<Video>;
 
-  constructor() { }
+  constructor(
+    private videosService: VideosService
+  ) { }
 
   ngOnInit(): void {
+    this.videosService.getVideos().subscribe(data => {
+      this.videoList = data.map(e => {
+        return {
+          id: e.payload.doc.id,
+          ...e.payload.doc.data()
+        } as Video;
+      });
+      console.log(this.videoList);
+    });
   }
 
 }
