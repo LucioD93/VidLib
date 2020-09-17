@@ -8,6 +8,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
   imports: [
     CommonModule,
     ComponentsModule
+  ],
+  exports: [
+    HomeComponent
   ]
 })
 export class HomeModule { }
