@@ -1,4 +1,17 @@
-<div *ngFor="let video of videoList">
-  <app-video-list-item [video]=video>
-  </app-video-list-item>
+<div
+  class="content"
+  fxLayout="row wrap"
+  fxLayoutGap="15px grid"
+>
+  <div
+    fxFlex="33%"
+    fxFlex.xs="100%"
+    fxFlexAlign.gt-sm="33%"
+    *ngFor="let video of videoList"
+  >
+    <app-video-list-item
+      [video]=video
+    >
+    </app-video-list-item>
+  </div>
 </div>

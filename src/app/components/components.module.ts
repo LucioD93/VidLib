@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoListItemComponent } from './video-list-item/video-list-item.component';
@@ -11,6 +12,7 @@ import { VideoListItemComponent } from './video-list-item/video-list-item.compon
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule
   ],
   exports: [
     VideoListComponent
