@@ -4,23 +4,28 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoListItemComponent } from './video-list-item/video-list-item.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     VideoListComponent,
-    VideoListItemComponent
+    VideoListItemComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   exports: [
-    VideoListComponent
+    VideoListComponent,
+    HeaderComponent
   ]
 })
 export class ComponentsModule { }
