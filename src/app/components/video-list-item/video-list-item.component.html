@@ -1,18 +1,6 @@
 <mat-card class="mat-elevation-z4" >
-  <!-- <mat-card-header>
+  <a href="{{ video.url }}">
+    <img mat-card-image src="{{ video.thumbnail }}">
     <mat-card-title>{{ video.title }}</mat-card-title>
-  </mat-card-header> -->
-  <img mat-card-image src="https://img.youtube.com/vi/UoC_O3HzsH0/0.jpg">
-  <mat-card-content>
-    <mat-card-title>{{ video.title }}</mat-card-title>
-  </mat-card-content>
-  <mat-card-actions>
-    <a
-      mat-flat-button
-      color="primary"
-      href="{{ video.url }}"
-    >
-      GO
-    </a>
-  </mat-card-actions>
+  </a>
 </mat-card>
