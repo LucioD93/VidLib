@@ -19,4 +19,8 @@ export class NewVideoFormComponent implements OnInit {
     this.dialogRef.close(this.data);
   }
 
+  onCancelClick(): void {
+    this.dialogRef.close('');
+  }
+
 }
