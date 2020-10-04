@@ -7,7 +7,6 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./new-video-form.component.scss']
 })
 export class NewVideoFormComponent implements OnInit {
-  videoID: string;
 
   constructor(
     public dialogRef: MatDialogRef<NewVideoFormComponent>,
@@ -17,7 +16,7 @@ export class NewVideoFormComponent implements OnInit {
   ngOnInit(): void {}
 
   onAddClick(): void {
-    this.dialogRef.close(this.videoID);
+    this.dialogRef.close(this.data);
   }
 
 }
