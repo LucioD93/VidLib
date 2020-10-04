@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatCardModule } from '@angular/material/card';
@@ -23,6 +24,7 @@ import { NewVideoFormComponent } from './new-video-form/new-video-form.component
   ],
   imports: [
     CommonModule,
+    FormsModule,
     FlexLayoutModule,
     MatCardModule,
     MatButtonModule,

@@ -2,14 +2,14 @@
   <p>Copy your video ID</p>
   <mat-form-field>
     <mat-label>Video ID</mat-label>
-    <input matInput ([ngModel])="videoID">
+    <input matInput type="text" [(ngModel)]="videoID">
   </mat-form-field>
 </div>
-<div mat-dialog-actions>
-  <button mat-icon-button>
-    <mat-icon>close</mat-icon>
+<div mat-dialog-actions align="end">
+  <button mat-icon-button aria-label="Close dialog">
+    <mat-icon mat-dialog-close>close</mat-icon>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button aria-label="Add video" (click)="onAddClick()">
     <mat-icon>add</mat-icon>
   </button>
 </div>

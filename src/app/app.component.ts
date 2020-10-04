@@ -14,7 +14,13 @@ export class AppComponent {
   constructor(public dialog: MatDialog){}
 
   onAddButtonPressed(): void {
-    console.log('Hola');
-    const dialogRef = this.dialog.open(NewVideoFormComponent);
+    const dialogRef = this.dialog.open(
+      NewVideoFormComponent,
+      {data: ''}
+    );
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed ->', result);
+    });
   }
 }
