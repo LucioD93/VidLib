@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-video-form.component.scss']
 })
 export class NewVideoFormComponent implements OnInit {
+  videoID: string;
 
   constructor() { }
 

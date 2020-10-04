@@ -1,1 +1,15 @@
-<p>new-video-form works!</p>
+<div mat-dialog-content>
+  <p>Copy your video ID</p>
+  <mat-form-field>
+    <mat-label>Video ID</mat-label>
+    <input matInput ([ngModel])="videoID">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-icon-button>
+    <mat-icon>close</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

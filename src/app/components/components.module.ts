@@ -6,6 +6,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoListItemComponent } from './video-list-item/video-list-item.component';
@@ -26,6 +28,8 @@ import { NewVideoFormComponent } from './new-video-form/new-video-form.component
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     VideoListComponent,
