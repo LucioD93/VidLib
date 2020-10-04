@@ -5,23 +5,27 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoListItemComponent } from './video-list-item/video-list-item.component';
 import { HeaderComponent } from './header/header.component';
+import { NewVideoFormComponent } from './new-video-form/new-video-form.component';
 
 @NgModule({
   declarations: [
     VideoListComponent,
     VideoListItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewVideoFormComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
   ],
   exports: [
     VideoListComponent,
