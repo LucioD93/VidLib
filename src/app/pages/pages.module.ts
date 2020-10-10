@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeModule } from '../home/home.module';
+import { HomeModule } from './home/home.module';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MatDialogModule
   ],
   exports: [
     HomeModule
