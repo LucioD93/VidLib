@@ -26,7 +26,8 @@ export class VideoInfoService {
     const httpHeaders: HttpHeaders = new HttpHeaders({
       key: YOUTUBE_API_KEY,
       id: videoId,
-      part: 'snippet'
+      part: 'snippet',
+      'Access-Control-Allow-Headers': 'X-Requested-With,content-type'
     });
     return this.httpClient.get(YOUTUBE_API_URL, {headers: httpHeaders});
     // return null;
